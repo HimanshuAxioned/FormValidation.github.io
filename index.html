@@ -6,17 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
 <body>
-
   <!-- navigation -->
   <header>
     <div class="header-content wrapper">
       <h1><a href="#FIXME" title="logo"><img src="https://via.placeholder.com/169x34" alt="logo"></a></h1>
-      <input type="text">
-      <a href="#FIXME" title="Go" class="go">go</a>
-      <nav>
+      <div class="search">
+        <input type="text" placeholder="search">
+        <a href="#FIXME" title="Go" class="go">go</a>
+      </div>
+    </div>
+    <nav>
+      <div class="wrapper">
         <ul class="nav-list">
           <li> <a href="#FIXME" title="Home">home</a></li>
           <li> <a href="#FIXME" title="News">news</a></li>
@@ -27,23 +32,24 @@
           <li> <a href="#FIXME" title="Treasury Network">treasury network</a></li>
           <li> <a href="#FIXME" title="Contact Us">contact us</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <!-- section banner -->
   <section class="banner">
-    <div class="wrapper">
+
+    <div class="wrapper banner-content">
       <h2>sign up</h2>
       <p>get the latest news on our events, exclusive offers and content</p>
     </div>
   </section>
 
-  <section class="form">
+  <section class="form-content">
     <div class="wrapper">
       <p>EuroFinance > <a href="#FIXME" title="Newsletter Sign Up">newsletter sign up</a></p>
       <h3>enter your details to subscribe to our newsletter</h3>
-      <form action="#FIXME">
+      <form action="#FIXME" class="form-item">
         <div class="input-item">
           <label>first name</label>
           <input type="text" name="fname" id="fname">
@@ -64,25 +70,25 @@
           <input type="text" name="company" id="company">
           <small>error msg</small>
         </div>
-        <div class="input-item">
+        <div class="input-item select-item">
           <label>company type</label>
           <select name="company-name" id="company-name">
             <option value="">-select-</option>
             <option value="company1">company1</option>
             <option value="company2">company2</option>
           </select>
-          <a href="#FIXME" title="Arrow Up" class="arrow-up">arrow up</a>
-          <a href="#FIXME" title="Arrow Down" class="arrow-up">arrow down</a>
+          <a href="#FIXME" title="Arrow Up" class="icon arrow-up">arrow up</a>
+          <a href="#FIXME" title="Arrow Down" class="icon arrow-down">arrow down</a>
         </div>
-        <div class="input-item">
+        <div class="input-item select-item">
           <label>country</label>
           <select name="country-name" id="country-name">
             <option value="">-choose-</option>
             <option value="country1">country1</option>
             <option value="country2">country2</option>
           </select>
-          <a href="#FIXME" title="Arrow Up" class="arrow-up">arrow up</a>
-          <a href="#FIXME" title="Arrow Down" class="arrow-up">arrow down</a>
+          <a href="#FIXME" title="Arrow Up" class="icon arrow-up">arrow up</a>
+          <a href="#FIXME" title="Arrow Down" class="icon arrow-down">arrow down</a>
         </div>
         <div class="input-item">
           <label>work email</label>
@@ -92,10 +98,15 @@
         <div class="input-item">
           <p>EuroFinance is the part of The Economist Group. Would you also like to receive information on subscribtion
             offers. Economist events and other products via email?</p>
-          <input type="checkbox" class="checkbox-yes"><span>yes</span>
-          <input type="checkbox" class="checkbox-yes"><span>no</span>
-        </div class="privacy-policy">
-        <p>
+          <div>
+            <input type="checkbox" class="checkbox-yes"><span>yes</span>
+          </div>
+          <div>
+            <input type="checkbox" class="checkbox-yes"><span>no</span>
+          </div>
+
+        </div>
+        <p class="privacy-policy">
           The Economist Group is a global organization and operates a strict privacy policy around the world. You can
           view our privacy policy at
           <a href="#FIXME" title="Privacy Policy">www.economistgroup.com/privacy</a>
@@ -103,7 +114,7 @@
         <input type="submit">
       </form>
     </div>
-    <a href="#FIXME" title="Scroll Up" class="scroll-up">scroll-up</a>
+    <a href="#FIXME" title="Scroll Up" class="icon scroll-up">scroll-up</a>
   </section>
 
   <!-- footer -->
@@ -129,15 +140,17 @@
         </div>
         <div>
           <h4>keep updated</h4>
-          <ul>
-            <li><a href="#FIXME" title="Linkedin" class="icon linkedin">linkedin</a></li>
-            <li><a href="#FIXME" title="Twitter" class="icon twitter">twitter</a></li>
-            <li><a href="#FIXME" title="Youtube" class="icon youtube">youtube</a></li>
-            <li><a href="#FIXME" title="Facebook" class="icon facebook">facebook</a></li>
+          <ul class="social-icons">
+            <li><a href="#FIXME" title="Linkedin" class="icon-brand linkedin">linkedin</a></li>
+            <li><a href="#FIXME" title="Twitter" class="icon-brand twitter">twitter</a></li>
+            <li><a href="#FIXME" title="Youtube" class="icon-brand youtube">youtube</a></li>
+            <li><a href="#FIXME" title="Facebook" class="icon-brand facebook">facebook</a></li>
           </ul>
         </div>
       </div>
-      <div class="copyright">
+    </div>
+    <div class="copyright">
+      <div class="wrapper copyright-content">
         <ul>
           <li><a href="#FIXME" title="Terms of use">terms of use</a></li>
           <li><a href="#FIXME" title="Privacy and cookies">privacy and cookies</a></li>
@@ -147,7 +160,7 @@
         <p>copyright &nbsp; 2019 EuroFinance.</p>
       </div>
     </div>
-    <a href="#FIXME" title="Scroll Up" class="scroll-up">scroll-up</a>
+    <a href="#FIXME" title="Scroll Up" class="icon scroll-up">scroll-up</a>
   </footer>
 
 </body>

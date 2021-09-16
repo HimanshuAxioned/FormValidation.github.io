@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body { font-family: sans-serif;}
+a { text-decoration: none;}
+
+.icon {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+}
+
+.icon-brand { font-family: "Font Awesome 5 Brands"; }
+
+/* start */
+.wrapper {
+  width: 51%;
+  margin: 0 auto;
+}
+
+/* navigation */
+
+
+.header-content { 
+  padding: 1.7em 0; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content input {
+  padding: 0.35em 0;
+  border: 1px solid #379fe3;
+  position: relative;
+  
+}
+
+.search { position: relative; }
+
+.search a {
+  padding: 0.66em 0.8em;
+  position: absolute;
+  right: 0;
+  color: #ffffff;
+  background-color: #379fe3;
+  font-size: 0.7em;
+  text-transform: capitalize;
+}
+
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #4078bb;
+}
+
+.nav-list {  
+  display: flex; 
+  padding: 0.5em; 
+  justify-content: space-around;
+}
+
+.nav-list li { border-right: 1px solid #379fe3;}
+
+.nav-list li:last-child { border-right: none;}
+
+.nav-list a {
+  padding-right: 1em;
+  color: #ffffff;
+  font-size: 0.65em;
+  text-transform: capitalize;
+}
+
+/* section banner */
+.banner{
+  width: 100%;
+  padding-top: 13.5em ;
+  padding-bottom: 5.8em;
+  position: absolute;
+  top: 0;
+  background-color: #225fab;
+  z-index: -1 ;
+}
+
+.banner h2 {
+  color: #ffffff;
+  font-size: 1.8em;
+}
+
+.banner h2::first-letter { text-transform: capitalize;}
+.banner p::first-letter { text-transform: capitalize;}
+
+.banner p { 
+  width: 70%;font-family: "Font Awesome 5 Free"; 
+  margin-top: 0.5em;
+  color: #379fe3;
+  font-size: 1.6em;
+}
+
+/* section form-content */
+
+.form-content { 
+  margin-top: 25%; 
+  position: relative;
+}
+
+.form-content p {
+  font-size: 0.65em; 
+  text-transform: capitalize;
+}
+
+.form-content p > a { 
+  color: #000000;
+  font-weight: 600;
+}
+
+.form-content h3 { 
+  margin: 1em 0;
+  color: #379fe3; 
+  font-size: 1.5em;
+}
+
+.form-content h3::first-letter { text-transform: capitalize;}
+label::first-letter { text-transform: capitalize;}
+small { font-size: 0.8em;}
+form input[type = checkbox] { width: initial;}
+
+label { 
+  display: block;
+  font-size: 0.7em;
+}
+
+
+.form-item input,.form-item select{ 
+  width: 30%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.3em;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+}
+
+.select-item {
+  width: 32%; 
+  position: relative;
+}
+
+.form-item select { 
+  width: 100%;
+  color: #ffffff;
+  background-color: #379fe3;
+  appearance: none;
+}
+
+.arrow-up {
+  position: absolute;
+  top:30%;
+  right:5%;
+}
+.arrow-down { 
+  position: absolute;
+  bottom:30%;
+  right: 5%;
+}
+.arrow-up::before {
+  content: "\f0de";
+  color: #ffffff;
+  font-size: 0.7em;
+}
+
+.arrow-down::before {
+  content: "\f0dd";
+  color: #ffffff;
+  font-size: 0.7em;
+} 
+
+.form-item span {
+  font-size: 0.7em; 
+  text-transform: capitalize;
+}
+
+.form-item p { 
+  margin: 0.5em 0;
+  font-size: 0.631em;
+  text-transform: initial;
+  line-height: 1.5em;
+}
+
+.form-item p > .select-item {
+  width: 32%; 
+  position: relative;
+}
+
+.scroll-up::before{
+  content: "\f139";
+  color: #a3a3a3;
+  font-size: 2em;
+}
+
+.form-content .scroll-up { 
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+
+/* footer */
+
+footer {
+  margin-top: 5em;
+  padding-top: 2em;
+  position: relative;
+  color: #ffffff;
+  background-color: #16396d;
+ }
+
+.footer-content { 
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .footer-content img { width: 80%;}
+ .footer-content h4::first-letter { text-transform: capitalize;}
+ .social-icons { display: flex; }
+
+.footer-content h4, .footer-content p {
+  margin: 1em 0;
+  font-size: 0.8em;
+ }
+
+ .social-icons a { margin-right: 1em;}
+
+
+
+.footer-content p { 
+  padding-top: 1em;
+  border-top: 1px solid #379fe3;
+}
+
+.footer-content a { 
+  color:#ffffff;
+  font-size: 0.7em;
+  text-transform: capitalize;
+}
+
+.linkedin::before { 
+  content:"\f0e1";
+  padding: 0.3em;
+  border-radius: 50%;
+  color: #0077b5;
+  background-color: #ffffff;
+  font-size: 1.5em;
+}
+
+.twitter::before { 
+  content:"\f099";
+  padding: 0.3em;
+  border-radius: 50%;
+  color: #1DA1F2;
+  background-color: #ffffff;
+  font-size: 1.5em;
+}
+
+.youtube::before { 
+  content:"\f167";
+  padding: 0.3em;
+  border-radius: 50%;
+  color: #FF0000;
+  background-color: #ffffff;
+  font-size: 1.5em;
+}
+
+.facebook::before { 
+  content:"\f39e";
+  padding: 0.3em 0.6em;
+  border-radius: 50%;
+  color: 	#4267B2;
+  background-color: #ffffff;
+  font-size: 1.5em;
+}
+
+.copyright { 
+  margin-top: 3em;
+  background-color: #102a56;
+}
+
+.copyright-content a, .copyright-content p{ text-transform: capitalize;}
+.copyright ul {display: flex; }
+.copyright-content li { border-right: 1px solid #ffffff;}
+.copyright-content li:last-child { border-right: none;}
+
+.copyright-content{ 
+  padding: 1em;
+  display: flex; 
+  font-size: 0.6em ;
+}
+
+.copyright-content a { 
+  margin: 0 1em; 
+  color: #ffffff;
+}
+
+.copyright-content p { 
+  width: 35%;
+  text-align: right;
+}
+
+.scroll-up::before{ color: #102a56; }
+
+footer .scroll-up { 
+  position: absolute;
+  bottom: 12%;
+  right: 5%;
+}
